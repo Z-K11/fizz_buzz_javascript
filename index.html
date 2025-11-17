@@ -13,7 +13,25 @@
                 user_input = parseInt(user_input);
                 console.log(user_input);
             }   
-        
+        while(++counter<=user_input)
+            {
+                if((counter%3)===0 & (counter%5)===0)
+                    {
+                        console.log(`FizzBuzz`);
+                    }
+                else if ((counter%5)===0)
+                    {
+                        console.log(`Buzz`);
+                    }
+                else if((counter%3)===0)
+                    {
+                        console.log(`Fizz`);
+                    }
+                else
+                    {
+                        console.log(counter);
+                    }
+            }
     </script>
 </head>
 <body>
